@@ -3,9 +3,15 @@
 
 int main (){
 
-float precos[10] = {45.50, 10.00, 99.90, 5.25, 30.00, 12.00, 8.50, 15.00, 50.00, 22.10};
+float precos[10];
 int i, j;
 float aux;
+
+printf("Digite os precos de 10 produtos:\n");
+for (i = 0; i < 10; i++) {
+    printf("Produto %d: R$ ", i + 1);
+    scanf("%f", &precos[i]);
+}
 
 
 printf("=== SISTEMA DE ORDENACAO DE PRECOS ===\n");
